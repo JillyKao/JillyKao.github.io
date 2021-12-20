@@ -12,15 +12,17 @@
             height: auto;
             margin: auto;
             display: flex;
-            background-color:white;
+            background-color:#ccc;
+            border: red;
         }
 
         .first{
-            margin: auto;
+            margin: 30px;
             font-size: 12px;
-            padding: 12px;
+            padding: 30px;
             text-align: center;
             font-family: "標楷體";
+            background-color: red;
         }
 
         .bady{
@@ -39,8 +41,7 @@
         .onece{
             width: 480px;
             height: 120px;
-            margin-left: 30px;
-            margin-right: 30px;
+            margin: 30px;
             padding: 30px;
             font-size: 12px;
             display: flex;
@@ -69,8 +70,7 @@
 
         .three{
             width: 1200px;
-            margin-left: 15px;
-            margin-right: 15px;
+            margin: auto;
             padding: 15px;
             font-size: 12px;
             display: flex;
@@ -91,8 +91,7 @@
 
         .four{
             width: 1200px;
-            margin-left: 15px;
-            margin-right: 15px;
+            margin: auto;
             padding: 15px;
             font-size: 12px;
             display: flex;
@@ -112,7 +111,7 @@
         }
 
         .five{
-            width: 1200px;
+            width: 100%;
             margin: auto;
             padding: 15px;
             font-size: 12px;
@@ -125,30 +124,76 @@
         .six{
             width: 1200px;
             margin: auto;
-            padding: 15px;
+
             font-size: 12px;
             display: flex;
             flex-wrap: wrap;
             font-family: "標楷體";
-            text-align: center;
+            
         }
 
         .sixth{
-            width: 210px;
-            margin-left: 15px;
-            margin-right: 15px;
+            width: 200px;
+            margin: 15px;
+            padding: 30px;
+            border: 5px;
+            font-size: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: "標楷體";
+        }
+
+        .seven{
+            width: 100%;
+            margin: auto;
+            padding: 15px;
+            font-size: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: "標楷體";
+            background-color: cornflowerblue;
+        }
+
+        .eight{
+            width: 1200px;
+            margin: auto;
             padding: 15px;
             font-size: 12px;
             display: flex;
             flex-wrap: wrap;
             font-family: "標楷體";
         }
+
+        .eighth{
+            width: 200px;
+            margin: 15px;
+            padding: 30px;
+            border: 5px;
+            font-size: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: "標楷體";
+        }
+
+        .nine{
+            width: 100%;
+            margin: auto;
+            padding: 15px;
+            font-size: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: "標楷體";
+            background-color: cornflowerblue;
+        }
+
+
     </style>
 </head>
 <body>
     <div class="head">
         <div class="first">
-            <img src="/homework2img/asset 0.png" alt="Build School">
+            <nav>
+                <img src="/homework2img/asset 0.png" alt="Build School">
         </div>
         <div>
             <h1 class="first" style="text-align: center;">
@@ -156,30 +201,34 @@
                     <strong> Build School</strong> <br> <br>developer career builder
                 </p>
             </h1>
+            
         </div>
-        <div class="first">台北班簡介</div>
-        <div class="first">新竹班簡介</div>
-        <div class="first">校友會</div>
-        <div class="first">Blog</div>
-        <div class="first">歷屆老師</div>
-        <div class="first">問題洽詢</div>
+        <div class="first">
+            <a href="#">台北班簡介</a>
+            <a href="#">新竹班簡介</a>
+            <a href="#">校友會-青築未來協會 Bulid the Future</a>
+            <a href="#">Blog</a>
+            <a href="#">歷屆老師</a>
+            <a href="#">問題洽詢</a>
+        </div>
+            </nav>
+            
     </div>
 
-    <div class="body" style="text-align: center;"><img src="/assets (1)/asset 1.webp"></div>
+    <div class="body" style="text-align: center;"><img src="https://fakeimg.pl/1200x710/#f00/"></div>
 
     <div class="one">
         <div class="onece">
             <img src="/assets (1)/1.jpg" >
-            <h3>
-                <strong>Build School <br>  <br> /*我們的理念*/</strong> 
-            </h3>
-            <p>
+        </div>
+        <div class="onece">
+                <h3><strong>Build School <br>  <br> /*我們的理念*/</strong> </h3>
+                <p>
                 Build = 將程式碼編譯及建置成可執行的軟體 <br>
                 Build = 動手做 <br>
                 Build = 軟體開發職涯的打造者
-            </p>
-            
-        </div>
+                </p>
+            </div>
 
         <div class="onece">
             <h1 style="text-align: center;">實作及就業導向的軟體開發學校</h1>
@@ -231,19 +280,19 @@
         </div>
 
         <div class="five">
-            <h1 style="text-align: center;">18 - 24週的實作及作品開發 - 從訓練、就業、到企業連結</h1>
+            <h1>18 - 24週的實作及作品開發 - 從訓練、就業、到企業連結</h1>
         </div>
     </div>
 
     <div class="six">
             <div class="sixth">
                 <h1>第1-4個月</h1>
-                    <img src="/assets (1)/asset 29.svg" width="50%" height="100%" alt="" style="text-align: center;">
-                    <h2>程式基礎教學</h2>
-                    <ol>
-                        <il>業界實戰講師</il>
-                        <il>企業主管/創業家/CTO 演講</il>
-                    </ol>
+                    <img src="/assets (1)/asset 29.svg" width="50%" height="100%" alt="" >
+                    <h2 style="text-align: center;">程式基礎教學</h2>
+                    <ul>
+                        <li>業界實戰講師</li>
+                        <li>企業主管/創業家/CTO 演講</li>
+                    </ul>
             </div>
 
             <div class="sixth">
@@ -251,16 +300,123 @@
                     <img src="/assets (1)/asset 31.svg" width="25%" height="100%" alt="">
                     <h2 style="text-align: center;">專案及作品導向實作</h2>
                     <p>
-                        <ol>
-                            <il>Web / App 作品開發 - 企業導師指導</il>
-                        </ol>
+                        <ul>
+                            <li>Web / App 作品開發 - 企業導師指導</li>
+                            <li>不只是 Demo - 真實可運作成果</li>
+                            <li>團隊開發 - 真實軟體開發團隊的運作及分工 (Agile敏捷, kanban 看板, CI 自動化建置)</li>
+                        </ul>
                     </p>
             </div>
 
             <div class="sixth">
                 <h1>第6-7個月</h1>
-                <img src="" alt="">
+                <img src="/assets (1)/asset 32.svg"  width="30%" height="100%" alt="">
+                <h2 style="text-align: center;">作品發表</h2>
+                <p>
+                    <ul>
+                        <li>簡報 Demo 及溝通技巧</li>
+                        <li>作品及程式碼講解</li>
+                        <li>個人履歷準備 – GitHub, CodePen …</li>
+                    </ul>
+                </p>
             </div>
+
+            <div class="sixth">
+                <h1>未來及展望</h1>
+                <img src="/assets (1)/asset 6.webp" width="40%" height="100%" alt="">
+                <h2>就業及企業導師諮詢</h2>
+                <p>
+                    <ul>
+                        <li>就業媒合或未來職涯諮詢</li>
+                        <li>企業導師 -人際連結及資源</li>
+                    </ul>
+                </p>
+            </div>
+    </div>
+
+    <div class="seven">
+        <h1>在課程及作品實作中，將採用這些工具 - 熟悉實務上軟體開發團隊的運作、分工及真實專案的流程 </h1>
+    </div>
+
+    <div class="eight">
+        <div class="eighth">
+            <img src="/assets (1)/asset 8.webp" alt="">
+            <img src="/assets (1)/asset 9.webp" alt="">
+            <h1>版本控管及程式碼管理</h1>
+            <ul>
+                <li>學員之練習及作品之程式碼，皆採用主流的 Git 當版本控管，熟悉版控的各種操作及實務專案運用; 課程中公開之練習程式碼，提交至 GitHub 上，其它學員可參考或供講師 Code Review 檢閱，並熟悉 Open Source 生態及工具</li>
+            </ul>
+        </div>
+
+        <div class="eighth">
+            <img src="/assets (1)/asset 10.webp" alt="">
+            <img src="/assets (1)/asset 11.webp" alt="">
+            <h1>作品開發及團隊管理</h1>
+            <ul>
+                <li>除了使用 GitHub 外，專題開發階段也將使用 Microsoft Azure DevOps Services 進行團隊開發、包括程式碼管理、工作項目追蹤、自動化建置等，熟悉一個軟體開發專案之流程、分工及日常工作。</li>
+                <li>也可透過目前許多開發團隊常用的專案管理及看板工具 - Trello 進行工作分派、追蹤、或整個班的工作事項管理</li>
+            </ul>
+        </div>
+
+        <div class="eighth">
+            <img src="/assets (1)/asset 12.webp" alt="">
+            <img src="/assets (1)/asset 13.webp" alt="">
+            <h1>雲端平台及服務</h1>
+            <ul>
+                <li>雲端平台的使用已逐漸成為一個成熟軟體開發團隊之基礎，並讓開發、測試、佈署工作更加的便利及自動化。因此學員將使用 Microsoft Azure 當成作品及專案應用系統執行的雲端平台，包括 Azure App Service 建立網站服務、Azure SQL Database 建立資料庫服務</li>
+            </ul>
+        </div>
+
+        <div class="eighth">
+            <img src="/assets (1)/asset 14.webp" alt="">
+            <img src="/assets (1)/asset 15.webp" alt="">
+            <h1>團隊溝通協作及通知</h1>
+            <ul>
+                <li>課程過程中的線上討論、遠端溝通、或技術分享，將可透過 Microsoft Teams 或Slack 工具。另外練習的程式碼提交至 GitHub、或是 Trello 上的工作狀態更新，或是 Azure DevOps 上自動化建置的狀態，皆可發通知至 Microsoft Teams 或 Slack，透過自動化提升工作效率，並熟悉一個軟體開發團隊的協同合作</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="nine">
+        <h1>我們的講師及企業導師擁有在這些公司的工作經歷、擔任主管或資深工程師</h1>
+    </div>
+
+    <div class="ten">
+        <div class="tenth">
+            <img src="/assets (1)/asset 17.webp" alt="">
+            <img src="/assets (1)/asset 19.webp" alt="">
+            <img src="/assets (1)/asset 21.webp" alt="">
+            <img src="/assets (1)/asset 24.webp" alt="">
+        </div>
+        
+        <div class="tenth">
+            <img src="/assets (1)/asset 18.webp" alt="">
+            <img src="/assets (1)/asset 20.webp" alt="">
+            <img src="/assets (1)/asset 22.webp" alt="">
+            <img src="/assets (1)/asset 23.webp" alt="">
+        </div>
+    </div>
+
+    <div class="eleven">
+        <div class="eleventh">
+            <h1>合作及接洽</h1>
+            <p>若為企業欲徵才、或非營利組織或公益團體希望參加我們的培訓或公益合作、或成為我們的講師或擔任指導學生的企業導師 (Inspire Mentor)，請與我們連絡</p>
+        </div>
+
+        <div class="eleventh">
+            <p>Build School​ 青杉人才有限公司 | 青群科技有限公司 <br>
+                社團法人台灣青築未來協會 Build the Future <br>
+                (內政部立案 : 台內團字第 1090033261 號) <br>
+                email: contact@build-school.com 電話: 02-66057606 <br>
+                ​台北市忠孝東路三段96號11F-1 (台北科大對面/忠孝新生站3號出口)</p>
+        </div>
+
+        <div class="twelve">
+            <img src="/assets (1)/asset 25.webp" alt="">
+            <img src="/assets (1)/asset 26.webp" alt="">
+            <p>隱私權宣告</p>
+            <p>© 2021 by Build School</p>
+        </div>
     </div>
 </body>
 </html>
