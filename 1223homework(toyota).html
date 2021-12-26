@@ -5,8 +5,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/CSS Reset.css">
+    <style>
+                .body{
+            font-family: Helvetica,Verdana,Arial,"\5FAE\8EDF\6B63\9ED1\9AD4","Microsoft JhengHei","\5137\9ED1 Pro","LiHei Pro",sans-serif;
+        }
+        .full_advantage{
+            width: 100%;
+            max-width: 1600px;
+            height: 100%;
+            margin: auto;
+            padding: 100px;
+        }
+        .advantage_block{
+            width: 960px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin: auto;
+            opacity: 0;
+            transition:1s;
+            
+        }
+        .advantage_block:hover{
+            opacity: 1;
+            
+        }
+        .info{
+            width: 360px;
+            color: white;
+            position: absolute;
+            z-index: 5;
+            left: -100px;
+            transition:1s .3s;
+        }
+        .advantage_block:hover .info{
+            left: 0;
+        }
+        .full_advantage .advantage_block:nth-child(even)  .info{
+            left: 700px;
+        }
+        .full_advantage .advantage_block:hover:nth-child(even)  .info{
+            left: 600px;
+        }
+        
+        .info_title{
+            display: flex;
+            background-color: red;
+            font-size: 50px;
+            line-height: 120px;
+        }
+        .full_advantage .advantage_block:nth-child(even)  .info_title{
+        flex-direction: row-reverse;
+            
+        }
+        .info_title .number{
+            font-size: 120px;
+            transform: rotate(90deg);
+            position: relative;
+            left:-17px;
+        }
+        .full_advantage .advantage_block:nth-child(even) .info_title .number{
+            left: 17px;
+        }
+        .info_content
+        {
+            background-color: black;
+            font-size:20px;
+            line-height: 40px;
+            text-align: left;
+            padding: 20px 20px 30px 20px;
+            height: 200px;
+        }
+        
+        .info_content h2{
+            font-size: 28px;
+        }
+        .mainpic{
+        position: relative;
+        top:-200px;
+        left: 250px;
+        box-sizing: border-box;
+        transition:1s;
+        }
+        .advantage_block:hover .mainpic{
+            left: 150px;
+        }
+        .full_advantage .advantage_block:nth-child(even) .mainpic{
+            left: -100px;
+        }
+
+        .full_advantage .advantage_block:nth-child(even):hover .mainpic{
+            left: 15px;;
+        } 
+        
+        .mainpic img{
+            width: 695px;
+            height: 430px;
+        }
+        .mainpic #yt{
+            width: 57px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            right: -15px;
+        }
+        .full_advantage .advantage_block:nth-child(even) .mainpic #yt{
+            left:-15px;
+        }
+        .block{
+            background-color: gray;
+            opacity: 0.1;
+            width: 50%;
+            height: 290px;
+            position: relative;
+            margin-left: auto ;
+            margin-top:30px ;
+            right:-100px;
+            transition:1s .3s;
+        }
+        .advantage_block:hover .block{
+            right:0px;
+        }
+        .full_advantage .advantage_block:nth-child(even) .block{
+            top:-100px;
+            right:100px;
+        }
+        .full_advantage .advantage_block:hover:nth-child(even) .block{
+        top: 0;
+        }
+        .revolution{
+            background-color: #EEEEEE;
+            padding: 20px;
+            width: 682px;
+            position: relative;
+            top:-125px ;
+            left:50px;
+            transition:1s;
+        }
+        .advantage_block:hover .revolution{
+            top:-225px ;
+        }
+        .full_advantage .advantage_block:nth-child(even) .revolution{
+            margin-left: auto;
+            left: 0;
+        }
+        .because_of_revolution{
+            color: red;
+            font-weight: 800;
+            font-size: 18px;
+        }
+        .because_of_revolution::after{
+            content:"-----------------------------------------------------------------------------";
+            color:transparent;
+            padding-left: 0.5em;
+            text-decoration: line-through red;
+        }
+        .revolution h3{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            line-height: 28px;
+            padding: 4px;
+            display: inline-block;    
+            margin-top: 5px;
+            border-radius: 5px ;       
+        }
+        .revolution p{
+            line-height: 24px;
+            font-size: 16px;
+            text-indent: -0.4em;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 1em;
+            color: rgb(111,111,111);
+        }
+        .revolution p::before{
+            content: "•";
+            color: red;
+            font-size: 1em;            
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="full_advantage">
+        <div class="advantage_block advantage_block_joyful">
+            <div class="info">
+                <div class="info_title"><div class="number">01</div><h1>操控樂趣</h1></div>
+                <div class="info_content"><h2>人人滿意的駕駛體驗</h2><p>指數再也我家責任編輯健康演員別的理想落實成績，說著畢業生，是個手上特別是大多協調體制當地最新配套為此自動發佈日期，常見。</p></div>
+            </div>
+            <div class="block"></div>
+            <div class="mainpic"><img src="https://picsum.photos/150/150?random=1" alt="天竺鼠車車1"><a  href="#"><img id="yt" src="https://picsum.photos/150/150?random=2" alt=""></a></div>
+            <div class="revolution">
+                <div class="because_of_revolution">因為我們做了這些革新</div>
+                <h3>低重心設計</h3>
+                <p>設置趨勢新人表現頻率最快集中讓我斑竹想像最大而言引導一套喜愛，元素藥品引導的是。</p>
+                <h3>毛茸茸的觸感</h3>
+                <p>多個怎麼樣忍不住大師男性連結尷尬購物，要是生態人大記憶事項一定文件核心優化，比較引發體育我市萬華鍾佳播其實住新莊。</p>
+                <h3>皂甘納飛</h3>
+                <p>選單多少常常，原本就會帳號特殊幾個竟然對話沉默一些新技術，提示訊息一定要無限包裝，成立一片對待別的。</p>                
+            </div>
+        </div>
 </body>
 </html>
