@@ -30,6 +30,11 @@
             /* 堆疊*/
         }
 
+        .title .number{
+            display: inline-block;
+            transform: rotate(90deg);
+        }
+
         .title .title-txt {
             background-color: black;
             padding: 20px;
@@ -60,6 +65,16 @@
             content: ' ';
             position: absolute;
             right: -60px;
+            top: -40px;
+            width: 250px;
+            height: 200px;
+            background-color: #ddd;
+        }
+
+        .section:nth-child(even) .video::before{
+            content: ' ';
+            position: absolute;
+            left: -60px;
             top: -40px;
             width: 250px;
             height: 200px;
@@ -100,7 +115,7 @@
         }
 
         .txt {
-            width: 700px;
+            width: 682px;
             background-color: #ccc;
             padding: 10px;
             margin-top: -1em;
@@ -108,6 +123,7 @@
             box-sizing: border-box;
             position: relative;
             z-index: 3;
+            bottom: 50px;
         }
 
         .section:nth-child(even) .txt{
@@ -128,6 +144,25 @@
             border-bottom: 1px solid #f00;
             margin-left: 0.5em;
             flex-grow: 1;
+        }
+
+        .txt h3{
+            background-color: black;
+            color: white;
+            display: inline-block;
+            height: 30px;
+            font-size: 22px;
+        }
+
+        .txt p{
+            padding: 1em;
+            text-indent: -1em;
+            margin: 10px 0px;
+            font-size: 22px;
+        }
+
+        .txt p ::before{
+            content: " .";
         }
     </style>
 </head>
@@ -150,7 +185,7 @@
             <div class="video">
                 <a href="#">
                     <div class="pic">
-                        <img src="https://picsum.photos/300/200?random=21" alt="">
+                        <img src="https://picsum.photos/300/200?random=20" alt="">
                     </div>
                     <div class="youtube_bottom"></div>
                 </a>
@@ -211,7 +246,7 @@
             <div class="video">
                 <a href="#">
                     <div class="pic">
-                            <img src="https://picsum.photos/300/200?random=21" alt="">
+                            <img src="https://picsum.photos/300/200?random=22" alt="">
                     </div>
                     <div class="youtube_bottom"></div>
                 </a>
@@ -242,7 +277,7 @@
             <div class="video">
                 <a href="#">
                     <div class="pic">
-                            <img src="https://picsum.photos/300/200?random=21" alt="">
+                            <img src="https://picsum.photos/300/200?random=23" alt="">
                     </div>
                     <div class="youtube_bottom"></div>
                 </a>
@@ -271,7 +306,7 @@
             <div class="video">
                 <a href="#">
                     <div class="pic">
-                            <img src="https://picsum.photos/300/200?random=21" alt="">
+                            <img src="https://picsum.photos/300/200?random=24" alt="">
                     </div>
                     <div class="youtube_bottom"></div>
                 </a>
