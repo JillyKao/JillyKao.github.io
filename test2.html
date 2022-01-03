@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/grid.css">
+    <link rel="stylesheet" href="/grid.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Document</title>
+
     <style>
         *{
         margin: 0;
@@ -159,40 +161,172 @@
             line-height: 1.5;
             /* color: white; */
         }
-        .process{
-            border: 3px solid lightpink;
+        .container{
+            border: 3px solid royalblue;
+            display: flex;
             width: 960px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .container .number{
+            width: 100px;
+            border: 3px solid darkslateblue;
+            margin: auto;
+            display: flex;
+        }
+        .container .number img{
+            width: 100%;
+            float: right;
+        }
+        .container .col_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .txt{
+            border: 3px solid tomato;
+            width: 380px;
             margin: auto;
             display: flex;
             flex-wrap: wrap;
         }
-        .row_process{
-            border: 3px solid sienna;
-            --bs-gutter-x: 1.5rem;
-            --bs-gutter-y: 0;
+        .container .txt h2{
+            width: 600px;
+            line-height: 1.5;
+            text-align: inherit;
+            border: 3px solid violet;
+            font-size: 24px;
+            padding-bottom: 10px;
+            justify-content: center
+        }
+        .container .txt p{
+            border: 3px solid khaki;
+            width: 300px;
+            font-size: 14px;
+            padding-bottom: 10px;
+        }
+        .container .img_container{
+            width: 474px;
+            /* border: 3px solid darkslateblue; */
+            margin: auto;
+            display: flex;
+        }
+        .container .img_container img{
+            border: 3px solid fuchsia;
+            width: 80%;
+        }
+        .projects{
+            border: 3px solid rosybrown;
+            width: 960px;
+            margin: auto;
+            display: flex;
+        }
+        .projects .projects_pic{
+            border: 3px solid peachpuff;
+            width: 300px;
+            padding-left: 10px;
+            padding-right: 10px;
+            justify-content: center;
+        }
+        .projects img{
+            width: 100%;
+            padding: 10px;
+        }
+        .feedback{
+            border: 3px solid indianred;
+            width: 960px;
+            margin: auto;
+            display: flex;
+        }
+        .feedback .pic_feedback{
+            border: 3px solid turquoise;
+            width: 480px;
             display: flex;
             flex-wrap: wrap;
-            margin-top: calc(-1 * var(--bs-gutter-y));
-            margin-right: calc(-0.5 * var(--bs-gutter-x));
-            margin-left: calc(-0.5 * var(--bs-gutter-x));
         }
-        .row_process> * {
-            border: 3px solid aqua;
-            box-sizing: border-box;
-            flex-shrink: 0;
+        .pic_feedback img{
             width: 100%;
-            max-width: 100%;
-            padding-right: calc(var(--bs-gutter-x) * 0.5);
-            padding-left: calc(var(--bs-gutter-x) * 0.5);
-            margin-top: var(--bs-gutter-y);
-            }
+        }
+        .consultation{
+            border: 3px solid turquoise ;
+            margin: auto;
+        }
+        .consultation .consultation_title h2{
+            line-height: 1.5;
+            border: 3px solid gold;
+            font-size: 60px;
+            text-align: left;
+        }
+        .consultation .consultation_input{
+            border: 3px solid khaki;
+            font-size: 70px;
+            padding-bottom: 50px;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .consultation .consultation_input input{
+            border: 3px solid lightsalmon;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .consultation .consultation_input textarea{
+            width: 380px;
+            height: 300px;
             
-        .col_process{
-            /* border: 3px solid lightskyblue; */
-            margin-top: 20px;
-            margin-left: 50px;
-            height: 300px; 
-            flex: 1 0 0%;
+        }
+        .subscribe{
+            border: 3px solid ;
+            width: 960px;
+            margin: auto;
+            text-align: center;
+        }
+        .information{
+            border: 3px solid olivedrab;
+            width: 960px;
+            margin: auto;
+        }
+        .information .address{
+            border: 3px solid tan;
+            width: 192px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .information .services{
+            border: 3px solid darkslategray;
+            width: 192px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .information .aboutcompany{
+            border: 3px solid slategray;
+            width: 80px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .information .networks{
+            border: 3px solid orangered;
+            width: 400px;
+        }
+        .themedesign p{
+            border: 3px solid burlywood;
+            text-align: center;
+        }
+        .qa {
+            border: 3px solid grey;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .qa a{
+            text-align: center;
+        }
+        @media screen and (min-width:768px) {
+            
+        }
+        @media screen and (min-width:1200px) {
+            
         }
     </style>
 </head>
@@ -357,26 +491,165 @@
                 <h2>Steps of our work</h2>
             </div>
         </div>
-        <div class="process">
-            <div class="row_process">
-                <div class="col_process">
-                    <div class="item_process">
-                        <div class="img_process">
-                            <img src="/HTMLhomework4/home-image-4.svg" alt="">
-                        </div>
-                        <div class="imgnumber_process">
-                            <img src="/HTMLhomework4/number-01.svg" alt="">
-                        </div>
-                        <div class="txt_process">
-                            <h3>Meeting With The Customer</h3>
-                            <p>The first meeting is very import to form contact and discuss the main ideas of the project.</p>
-                        </div>
+        <div class="container">
+            <div class="row_container">
+                <div class="col_container">
+                    <div class="number">
+                        <img src="/HTMLhomework4/number-01.svg" alt="">
                     </div>
-                </div>
+                    <div class="txt">
+                        <h2>Meeting With The Customer</h2>
+                        <p>The first meeting is very import to form contact and discuss the main ideas of the project.</p>
+                    </div>
+                    <div class="img_container">
+                        <img src="/HTMLhomework4/home-image-4.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row_container">
+                <div class="col_container">
+                    <div class="number">
+                        <img src="/HTMLhomework4/number-02.svg" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Meeting With The Customer</h2>
+                        <p>The first meeting is very import to form contact and discuss the main ideas of the project.</p>
+                    </div>
+                    <div class="img_container">
+                        <img src="/HTMLhomework4/home-image-5.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row_container">
+                <div class="col_container">
+                    <div class="number">
+                        <img src="/HTMLhomework4/number-03.svg" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Meeting With The Customer</h2>
+                        <p>The first meeting is very import to form contact and discuss the main ideas of the project.</p>
+                    </div>
+                    <div class="img_container">
+                        <img src="/HTMLhomework4/home-image-6.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row_container">
+                <div class="col_container">
+                    <div class="number">
+                        <img src="/HTMLhomework4/number-04.svg" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Meeting With The Customer</h2>
+                        <p>The first meeting is very import to form contact and discuss the main ideas of the project.</p>
+                    </div>
+                    <div class="img_container">
+                        <img src="/HTMLhomework4/home-image-7.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row_container">
+                <div class="col_container">
+                    <div class="number">
+                        <img src="/HTMLhomework4/number-05.svg" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Meeting With The Customer</h2>
+                        <p>The first meeting is very import to form contact and discuss the main ideas of the project.</p>
+                    </div>
+                    <div class="img_container">
+                        <img src="/HTMLhomework4/home-image-8.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slogan">
+            <div class="txt">
+                <h2>Our team's work with Projects</h2>
+            </div>
+            <div class="btn">
+                <a href="#">ALL PROJECTS</a>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="projects_pic">
+                <img src="/HTMLhomework4/project-01" alt="">
+            </div>
+            <div class="projects_pic">
+                <img src="/HTMLhomework4/project-02" alt="">
+            </div>
+            <div class="projects_pic">
+                <img src="/HTMLhomework4/project-03" alt="">
+            </div>
+        </div>
+        <div class="feedback">
+            <div class="pic_feedback">
+                <img src="/HTMLhomework4/home-image-9.svg" alt="">
+            </div>
+            <div class="consultation">
+                <div class="consultation_title">
+                    <h2>Sign up for our consultation</h2>
+                </div>
+                <div class="consultation_input">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="text" name="" id="" placeholder="Mail">
+                    <textarea name=" " id="" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+
+            <h2>Subscribe to our news and learn more</h2>
+            <input type="text" name="" id="" placeholder="Your email">
+        </div>
+        <div class="information">
+            <div class="address">
+                <img src="/HTMLhomework4/logo.webp" alt="">
+                <address>
+                    <a href="tel:+0(000)-000-00-00">Phone:+1(045)-224-12-67</a>
+                    <a href="Mail:info@demolink">info@demolink.org</a>
+                </address>
+            </div>
+            <div class="services">
+                <a href="#">Web design & brending</a>
+                <a href="#">Web development</a>
+                <a href="#">Full Optimization</a>
+                <a href="#">Research & Strategy</a>
+                <a href="#">Managment & Marketing</a>
+                <a href="#">Free support</a>
+            </div>
+            <div class="aboutcompany">
+                <a href="#">About us</a>
+                <a href="#">Team</a>
+                <a href="#">Case studio</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div class="networks">
+                <p>Join us in the social networks and keep up on the latest news.</p>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="logo_bottom">
+                <div class="themedesign">
+                <p>Copyright © 2018 Wordpress Maikon. All Rights Reserved. | Theme design by <a href="#">Zemez</a></p>
+                <div class="qa">
+                    <a href="#">Privacy & Policy</a>
+                    <a href="#">FAQ</a>
+                </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
