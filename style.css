@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    }
+    .section{
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 0px;
+        /* border: 3px solid #faa; */
+    }
+    .title{
+        width: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: transparent;
+        flex-grow: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .title img{
+        width:auto;
+        /* border: 3px solid #fa0; */
+    }
+    .title nav{
+        margin-left: auto;
+        font-size: 18px;
+        /* border: 3px solid #f00; */
+    }
+    .title nav a{
+        /* color: black; */
+        padding: 10px;
+        text-decoration: none;
+    }
+    .title .subscribe{
+        margin-left: 40px;
+        font-size: 18px;
+        /* border: 3px solid #f0a; */
+    }
+    .title .subscribe a{
+        color: black;
+        text-decoration: none;
+    }
+    .graphic{
+        /* border: 3px solid cornflowerblue; */
+        display: flex;
+        width: auto;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .graphic .txt{
+        /* border: 3px solid darkmagenta; */
+        width: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .graphic .txt h2{
+        width: 200px;
+        line-height: 1.5;
+        text-align: inherit;
+        /* border: 3px solid yellow; */
+        font-size: 24px;
+        padding-bottom: 60px;
+        justify-content: center;
+    }
+    .graphic .txt p{
+        /* border: 3px solid skyblue; */
+        width: 300px;
+        font-size: 14px;
+        padding-bottom: 60px;
+    }
+    .graphic .btn{
+        /* border: 3px solid burlywood;  */
+        width: 250px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .graphic .btn a{
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .pic{
+        width: 480px;
+        /* border: 3px solid darkslateblue; */
+        margin: auto;
+        display: flex;
+    }
+    .pic img{
+        width: 100%;
+        float: left;
+    }
+    .slogan{
+        /* border: 3px solid teal; */
+        width: 960px;
+        margin: auto;
+    }
+    .slogan .txt{
+        width: 300px;
+    }
+    .row{
+        /* border: 3px solid slateblue; */
+        width: 960px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item{
+        /* border: 3px solid darkslategray; */
+        width: 250px;
+        height: 300px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .data{
+        /* border: 3px solid darkslategrey; */
+        width: 960px;
+        margin: auto;
+        height: 550px;
+        /* background-color: dodgerblue; */
+    }
+    .row_data{
+        /* border: 3px solid dodgerblue; */
+        width: 480px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .data_item{
+        /* border: 3px solid khaki; */
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        /* color: white; */
+    }
+    .data_item h3{
+        text-align: center;
+    }
+    .data_item p{
+        line-height: 1.5;
+    }
+    .data_slogan{
+        /* border: 3px solid steelblue; */
+        width: 400px;
+        height: auto;
+        float: right;
+        line-height: 1.5;
+        /* color: white; */
+    }
+    .container{
+        /* border: 3px solid royalblue; */
+        display: flex;
+        width: 960px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .container .number{
+        width: 100px;
+        /* border: 3px solid darkslateblue; */
+        margin: auto;
+        display: flex;
+    }
+    .container .number img{
+        width: 100%;
+        float: right;
+    }
+    .container .col_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .txt{
+        /* border: 3px solid tomato; */
+        width: 380px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container .txt h2{
+        width: 600px;
+        line-height: 1.5;
+        text-align: inherit;
+        /* border: 3px solid violet; */
+        font-size: 24px;
+        padding-bottom: 10px;
+        justify-content: center
+    }
+    .container .txt p{
+        /* border: 3px solid khaki; */
+        width: 300px;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .container .img_container{
+        width: 474px;
+        /* border: 3px solid darkslateblue; */
+        margin: auto;
+        display: flex;
+    }
+    .container .img_container img{
+        /* border: 3px solid fuchsia; */
+        width: 80%;
+    }
+    .projects{
+        /* border: 3px solid rosybrown; */
+        width: 960px;
+        margin: auto;
+        display: flex;
+    }
+    .projects .projects_pic{
+        /* border: 3px solid peachpuff; */
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center;
+    }
+    .projects img{
+        width: 100%;
+        padding: 10px;
+    }
+    .feedback{
+        /* border: 3px solid indianred; */
+        width: 960px;
+        margin: auto;
+        display: flex;
+    }
+    .feedback .pic_feedback{
+        /* border: 3px solid turquoise; */
+        width: 480px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pic_feedback img{
+        width: 100%;
+    }
+    .consultation{
+        /* border: 3px solid turquoise ; */
+        margin: auto;
+    }
+    .consultation .consultation_title h2{
+        line-height: 1.5;
+        /* border: 3px solid gold; */
+        font-size: 60px;
+        text-align: left;
+    }
+    .consultation .consultation_input{
+        /* border: 3px solid khaki; */
+        font-size: 70px;
+        padding-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .consultation .consultation_input input{
+        /* border: 3px solid lightsalmon; */
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .consultation .consultation_input textarea{
+        width: 380px;
+        height: 300px;
+        
+    }
+    .emailsubscribe{
+        border: 3px solid ;
+        width: 960px;
+        margin: auto;
+        text-align: center;
+    }
+    .information{
+        /* border: 3px solid olivedrab; */
+        width: 960px;
+        margin: auto;
+    }
+    .information .address{
+        /* border: 3px solid tan; */
+        width: 192px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .information .services{
+        /* border: 3px solid darkslategray; */
+        width: 192px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .information .aboutcompany{
+        /* border: 3px solid slategray; */
+        width: 80px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .information .networks{
+        /* border: 3px solid orangered; */
+        width: 400px;
+    }
+    .themedesign p{
+        /* border: 3px solid burlywood; */
+        text-align: center;
+    }
+    .qa {
+        /* border: 3px solid grey; */
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .qa a{
+        text-align: center;
+    }
+@media screen and (max-width: 768px) {
+    .title{
+        width: 600px;
+        height: 100px;
+        padding: 10px;
+        position: fixed;
+        margin-bottom: 10px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        padding-bottom: 10px;
+    }
+    .title img{
+        width: 50%;
+        margin: auto;
+    }
+    .title nav{
+    display: none;
+    }
+
+    .title .subscribe{
+        display: none;
+    }
+    .graphic{
+        width: 300px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid teal;
+    }
+    .graphic .txt h2{
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    
+}
