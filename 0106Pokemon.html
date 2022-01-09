@@ -13,10 +13,10 @@
     <button onclick='fetchPokemon()'>載入寶可夢圖鑑列表fetchPokemon()</button>
     <button onclick='fetchPokemon_appendChild()'>載入寶可夢圖鑑列表appendChild()</button>
     <button id='reset' onclick="resetPokemon()">Reset</button>
-    <button onclick="btnPokemon()">btn.onclick</button>
-    <button onclick="addPokemon()">addEventListener()</button>
-    <button onclick="clickaddPokemon()">click+</button>
-    <button onclick="clickminusPokemon()">click-</button>
+    <button id='btn2' onclick="btnPokemon()">btn.onclick</button>
+    <button id='addEven' onclick="addPokemon()">addEventListener</button>
+    <button id='plus'onclick="clickaddPokemon()">clickplus</button>
+    <button id='minus' onclick="clickminusPokemon()">clickminus</button>
 
     <div id='container'></div>
 
@@ -76,24 +76,55 @@
 
                 // //Homework
         // //1.改成 btn2.onclick寫法
-        // function btnPokemon(){
+        btn2.onclick = function(){
+            let pokemons = " ";
 
-        // }
+            for (let i = 1; i < 890; i++) {
+                let fileName = i.toString().padStart(3,0);
+                let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+                let pokemonImg = `<img src='${pathFile}'>`;
+                pokemons += pokemonImg;
+            }
+
+            container.innerHTML = pokemons;
+            index = 890;
+        }
 
         // //2.改成 addEventListener()寫法
-        // function addPokemon(){
+        addEven.addEventListener('click', function(){
+            container.innerHTML = " ";
 
-        // }
+            for(let i = 1; i<890; i++){
+                let fileName = i.toString().padStart(3,0);
+                let img = document.createElement("img");
+                img.setAttribute("src",`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
+                container.appendChild(img);
+            }
+
+            index = 890;
+        })
 
         // //3.加一按鈕
-        // function clickaddPokemon(){
+        plus.clickplus('click', function(){
+            if(index < 890){
+                let fileName = index.toString().padStart(3,0);
+                let img = document.createElement("img");
+                img.setAttribute("src",`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
+                container.appendChild(img);
 
-        // }
+                index++;
+            }
+        })
 
         // //4.減一按鈕
-        // function clickminusPokemon{
-
-        // }
+        minus.addEventListener('click', function(){
+            if (index > 0){
+                if(container.lastChild){
+                    container.removeChild(container.lastChild);
+                    index--;
+                }
+            }
+        })
     </script>
 </body>
 
