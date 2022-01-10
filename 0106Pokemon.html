@@ -105,8 +105,8 @@
         })
 
         // //3.加一按鈕
-        plus.clickplus('click', function(){
-            if(index < 890){
+        plus.addEventListener('click', function(){
+            if(fileName<index){
                 let fileName = index.toString().padStart(3,0);
                 let img = document.createElement("img");
                 img.setAttribute("src",`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
