@@ -15,15 +15,27 @@
     <button id='reset' onclick="resetPokemon()">Reset</button>
     <button id='btn2' onclick="btnPokemon()">btn.onclick</button>
     <button id='addEven' onclick="addPokemon()">addEventListener</button>
-    <button id='plus'onclick="clickaddPokemon()">clickplus</button>
-    <button id='minus' onclick="clickminusPokemon()">clickminus</button>
+    <button id="Plus" class="btn btn-outline-success me-2">plus</button>
+    <button id="Minus" class="btn btn-outline-danger me-2">minus</button>
 
-    <div id='container'></div>
+    <div class="container">
+        <div id='container' class="position-relative"></div>
+
+    </div>
 
     <script>
         let container = document.getElementById('container');
 
-        window.onload = setPokemon();
+        window.onload = function(){
+            let container = document.getElementById('container');
+            let index;
+            let btn1 = document.getElementById("btn1");
+            let btn2 = document.getElementById("btn2");
+            let Plus = document.getElementById("Plus");
+            let Minus = document.getElementById("Minus");
+            
+            setPokemon();
+        }
 
         //方式1:利用Element.innerHTML設定HTML字串
         function setPokemon() {
@@ -74,8 +86,8 @@
             }
         }
 
-                // //Homework
-        // //1.改成 btn2.onclick寫法
+        //Homework
+        //1.改成 btn2.onclick寫法
         btn2.onclick = function(){
             let pokemons = " ";
 
@@ -90,7 +102,7 @@
             index = 890;
         }
 
-        // //2.改成 addEventListener()寫法
+        //2.改成 addEventListener()寫法
         addEven.addEventListener('click', function(){
             container.innerHTML = " ";
 
@@ -104,26 +116,29 @@
             index = 890;
         })
 
-        // //3.加一按鈕
-        plus.addEventListener('click', function(){
-            if(fileName<index){
+        //3.加一按鈕
+        Plus.addEventListener('click', function(){
+            if (index < 890){
                 let fileName = index.toString().padStart(3,0);
                 let img = document.createElement("img");
-                img.setAttribute("src",`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
+                img.setAttribute("src", `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
                 container.appendChild(img);
 
                 index++;
             }
+            
         })
 
         // //4.減一按鈕
-        minus.addEventListener('click', function(){
+        Minus.addEventListener('click', function(){
             if (index > 0){
-                if(container.lastChild){
-                    container.removeChild(container.lastChild);
-                    index--;
+                if (container.lastChild){
+                container.removeChild(container.lastChild);
+
+                index--;
                 }
             }
+            
         })
     </script>
 </body>
