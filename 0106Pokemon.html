@@ -15,8 +15,8 @@
     <button id='reset' onclick="resetPokemon()">Reset</button>
     <button id='btn2' onclick="btnPokemon()">btn.onclick</button>
     <button id='addEven' onclick="addPokemon()">addEventListener</button>
-    <button id="Plus" class="btn btn-outline-success me-2">plus</button>
-    <button id="Minus" class="btn btn-outline-danger me-2">minus</button>
+    <button id="Plus" onclick="plusPokemon()">plus</button>
+    <button id="Minus" onclick="minusPokemon()">minus</button>
 
     <div class="container">
         <div id='container' class="position-relative"></div>
@@ -32,7 +32,7 @@
             let btn2 = document.getElementById("btn2");
             let Plus = document.getElementById("Plus");
             let Minus = document.getElementById("Minus");
-
+            
             setPokemon();
         }
 
@@ -79,17 +79,10 @@
             }
         }
 
-        function resetPokemon() {
-            while(container.firstChild){
-                container.removeChild(container.firstChild);
-            }
-        }
-
         //Homework
         //1.改成 btn2.onclick寫法
         btn2.onclick = function(){
             let pokemons = " ";
-
             for (let i = 1; i < 890; i++) {
                 let fileName = i.toString().padStart(3,0);
                 let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
@@ -98,42 +91,49 @@
             }
 
             container.innerHTML = pokemons;
-            index = 898;
+            index = 890;
         }
 
         //2.改成 addEventListener()寫法
         addEven.addEventListener('click', function(){
             container.innerHTML = " ";
-
-            for(let i = 1; i < 898; i++){
-                let fileName = i.toString().padStart(3,0);
+            for(let i = 1; i<890; i++){
+                let fileName = i.toString().padStart(3,"0");
                 let img = document.createElement("img");
                 img.setAttribute("src",`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
                 container.appendChild(img);
             }
+
             index = 898;
         })
 
         //3.plus
-        Plus.addEventListener('click', function(){
-            if(i<898){
-                let fileName = i.toString().padStart(3,0);
-                let img = document.createElement("img");
-                pokemonImg.setAttribute("src",`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
-                container.appendChild(pokemonImg);
-            }
-            i++;
-        })
+        let index = 1;
+        Plus.onclick = function(){
+            index+=1;
+            let fileName = index.toString().padStart(3,"0");
+            let img = document.createElement("img");
+            let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+            img.setAttribute("src", pathFile);
+            container.appendChild(img);
+            
+        }
+        
+        
 
         //4.minus
-        Minus.addEventListener('click', function(){
-            if (i > 0){
-                if (container.lastChild){
+        Minus.onclick = function removeOne(){
+            if(container.lastChild!==null){
                 container.removeChild(container.lastChild);
-                }
+            }     
+        }
+
+        //5.reset
+        function resetPokemon() {
+            while(container.firstChild){
+                container.removeChild(container.firstChild);
             }
-            i--;
-        })
+        }
     </script>
 </body>
 
