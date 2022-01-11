@@ -52,7 +52,7 @@
         //     { Ranking: 10, Company: "東部高科", Country: "南韓", Ratio: "1" }
         // ];
 
-        let table = document.createElement('table');
+        let table = document.querySelector('table');
         let thead = document.createElement('thead');
         let tbody = document.createElement('tbody');
         let theadTr = document.createElement('tr');
@@ -84,7 +84,7 @@
         //要寫function createfTable(titleArray, dataArray){};
         window.onload = function () {
             getPie();
-            createTable(marketingShare);
+            createTable(marketingShare.titles);
         }
 
 
@@ -143,28 +143,29 @@
                 }
             });
         }
-        function createTable(msObject){
-            //1.thead
-            msObject.titles.forEach( title => {
-                let td = document.createElement("td");
-                td.innerText = title;
-                theadTr.appendChild(td);
-            });
-            thead.appendChild(theadTr);
+            function createTable(msObject){
+                //1.thead
+                msObject.forEach( title => {
+                    let th= document.createElement("th");
+                    th.innerText = title;
+                    theadTr.appendChild(th);
+                });
+                thead.appendChild(theadTr);
+                table.appendChild(thead);
 
-            //2.tbody
-            msObject.titles.forEach((row)=>{
+            // //2.tbody
+            marketingShare.data.forEach(column=>{
                 let tbodyTr = document.createElement("tr");
-                Object.values(row).forEach(value=>{
+                Object.values(column).forEach(value=>{
                     let td = document.createElement("td");
                     td.innerText = value;
                     tbodyTr.appendChild(td);
                 })
                 tbody.appendChild(tbodyTr);
-            })
+            });
+            table.appendChild(tbody);
 
-            //3.table
-            table.append(thead, tbody);
+            // //3.table
         }
     </script>
 </body>
