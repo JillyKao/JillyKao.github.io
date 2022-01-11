@@ -28,12 +28,11 @@
 
         window.onload = function(){
             let container = document.getElementById('container');
-            let index;
             let btn1 = document.getElementById("btn1");
             let btn2 = document.getElementById("btn2");
             let Plus = document.getElementById("Plus");
             let Minus = document.getElementById("Minus");
-            
+
             setPokemon();
         }
 
@@ -99,46 +98,41 @@
             }
 
             container.innerHTML = pokemons;
-            index = 890;
+            index = 898;
         }
 
         //2.改成 addEventListener()寫法
         addEven.addEventListener('click', function(){
             container.innerHTML = " ";
 
-            for(let i = 1; i<890; i++){
+            for(let i = 1; i < 898; i++){
                 let fileName = i.toString().padStart(3,0);
                 let img = document.createElement("img");
                 img.setAttribute("src",`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
                 container.appendChild(img);
             }
-
-            index = 890;
+            index = 898;
         })
 
-        //3.加一按鈕
+        //3.plus
         Plus.addEventListener('click', function(){
-            if (index < 890){
-                let fileName = index.toString().padStart(3,0);
-                let pokemonImg =`<img src='${pathFile}'>`;
-                img.setAttribute("src", `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
-                container.innerHTML+= pokemonImg;
-
-                index+=1;
+            if(i<898){
+                let fileName = i.toString().padStart(3,0);
+                let img = document.createElement("img");
+                pokemonImg.setAttribute("src",`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`);
+                container.appendChild(pokemonImg);
             }
-            
+            i++;
         })
 
-        // //4.減一按鈕
+        //4.minus
         Minus.addEventListener('click', function(){
-            if (index > 0){
+            if (i > 0){
                 if (container.lastChild){
                 container.removeChild(container.lastChild);
-
-                index--;
                 }
             }
-            
+            i--;
         })
     </script>
 </body>
