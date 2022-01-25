@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Hackthon_02.css">
+
+    <title>Hello, world!</title>
+    </head>
+    <body>
+        <body style="font-family: Microsoft JhengHei;">
+            <div class="row borderline" style="margin-top:50px;">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h2 class="textcenter" style="font-size:36px;">猜數字</h2>
+                    <div class="row">
+                        <div class="col-6 borderline">
+                            <a name="" id="CreateNumber" class="btn btn-info button-a" href="#" role="button">產生數字</a>
+                            <a name="" id="WatchAnswer" class="btn btn-info button-a" href="#" role="button">偷看答案</a>
+                            <a name="" id="Restart" class="btn btn-info button-a" href="#" role="button">放棄重來</a>
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" class="form-control" name="" id="inputText" aria-describedby="helpId" placeholder="輸入四位數字">
+                                <small id="helpId" class="form-text text-muted">提示將顯示在右方</small>
+                            </div>
+                            <a name="createnumber" id="GuessButton" class="btn btn-info button-a" href="#" role="button">猜數字!</a>
+                        </div>
+                        <div class="col-6 borderline textcenter">
+                            遊戲歷程:
+                            <ul class="list-group" id="GuessArea">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="/Hackthon_02.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

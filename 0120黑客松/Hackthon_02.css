@@ -1,0 +1,40 @@
+.button-a {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.textcenter {
+    text-align: center;
+    font-size: 25px;
+}
+
+.borderline {
+    border: 1px solid #000000;
+    border-radius: 25px;
+}
+
+.guessarea {
+    margin: 30px;
+    font-size: 16px;
+    border: 1px solid #000000;
+}
+
+.pill-style {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.errorcolor {
+    background-color: #e71010;
+}
+
+.correctcolor {
+    background-color: #11db33;
+}
+
+.listitembackcolor:hover {
+    background-color: blue;
+    color: white;
+}
