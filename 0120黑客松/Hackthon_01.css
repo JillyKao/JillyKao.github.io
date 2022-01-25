@@ -1,0 +1,41 @@
+.row {
+    margin: 0 auto;
+}
+
+.margin {
+    margin: 15px;
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    /* background-color: rgb(29, 24, 48); */
+    border: solid 2px #ffffff;
+    color: white;
+    border-radius: 50px;
+}
+
+.enter {
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    background-color: rgb(29, 24, 48);
+    border: solid 2px #00ca0a;
+    color: white;
+    border-radius: 50px;
+}
+
+.back {
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    background-color: rgb(29, 24, 48);
+    border: solid 2px #e71313;
+    color: white;
+    border-radius: 50px;
+}
+
+.titletext {
+    font-size: 30px;
+
+}
