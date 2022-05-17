@@ -1,10 +1,6 @@
 //將所有資訊分別列出 一一去比對
 const appleList = [
     {
-        type:'商店',
-        name:' ',
-    },
-    {
         type:'iPad',
         name:'iPad Air',
         price:18900,
@@ -44,6 +40,10 @@ const appleList = [
                 ]
             }
         ]
+    },
+    {
+        type:'商店',
+        name:' ',
     },
     {
         type:'Mac',
