@@ -8,13 +8,13 @@ const appleList = [
         type:'iPad',
         name:'iPad Air',
         price:18900,
-        mainImg:'/iphonepic/ipad-air-1.jfif',
+        mainImg:'/JavaScript/iphonepic/ipad-air-1.jfif',
         colorList:[
-            {name:'太空灰色', color:'#B2B5B7', img:'/iphonepic/ipad-air-2.png'},
-            {name:'銀色', color:'#DEE0DF', img:'/iphonepic/ipad-air-3.png'},
-            {name:'綠色', color:'#CDDECA', img:'/iphonepic/ipad-air-4.png'},
-            {name:'玫瑰金色', color:'#EBCAC3', img:'/iphonepic/ipad-air-5.png'},
-            {name:'天藍色', color:'#C9D8E5', img:'/iphonepic/ipad-air-6.png'},
+            {name:'太空灰色', color:'#B2B5B7', img:'/JavaScript/iphonepic/ipad-air-2.png'},
+            {name:'銀色', color:'#DEE0DF', img:'/JavaScript/iphonepic/ipad-air-3.png'},
+            {name:'綠色', color:'#CDDECA', img:'/JavaScript/iphonepic/ipad-air-4.png'},
+            {name:'玫瑰金色', color:'#EBCAC3', img:'/JavaScript/iphonepic/ipad-air-5.png'},
+            {name:'天藍色', color:'#C9D8E5', img:'/JavaScript/iphonepic/ipad-air-6.png'},
         ],
         spec:[
             {
