@@ -5,10 +5,6 @@ const appleList = [
         name:' ',
     },
     {
-        type:'Mac',
-        name:'Mac',
-    },
-    {
         type:'iPad',
         name:'iPad Air',
         price:18900,
@@ -48,6 +44,10 @@ const appleList = [
                 ]
             }
         ]
+    },
+    {
+        type:'Mac',
+        name:'Mac',
     },
     {
         type:'iPhone',
